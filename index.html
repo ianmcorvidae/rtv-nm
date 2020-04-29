@@ -1,0 +1,12 @@
+<html>
+	<body>
+		<script type="text/javascript"  src="https://register.rockthevote.com/assets/rtv-iframe.js"></script>
+                <script type="text/javascript">
+                    var url = new URL(window.location);
+                    var params = {partner: 38370}
+                    if (url.searchParams.get("source")) { params["source"] = url.searchParams.get("source") }
+                    if (url.searchParams.get("tracking")) { params["tracking"] = url.searchParams.get("tracking") }
+                    RtvIframe.init(params)
+                </script>
+	</body>
+</html>
